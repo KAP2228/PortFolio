@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krupa B | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1><i><b>Krupa B</b></i></h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+           <li><a href="krupaSE.pdf" download class="cv-link">Download CV</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Hero Section Container -->
+    <section class="hero">
+         <div class="hero-content">
+        <img src="photo11.jpg" alt="Krupa B" class="profile-pic">
+        <h2>Hello, I'm <span>Krupa B</span></h2>
+        <p> Web Developer | Frontend Developer | Java Devloper</p>
+
+    <button onclick="scrollToContact()">Hire Me</button>
+</div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2><br>
+        <p><i>
+           I am a fresher MCA graduate with a strong interest in Frontend Web Development and Software Engineering. 
+           I have hands-on knowledge of HTML, CSS, Java, and basic JavaScript, and I enjoy building responsive and user-friendly web applications. 
+           I am eager to learn new technologies and apply my skills to real-world projects.
+       </i> </p>
+    </section>
+
+    <!-- Skills -->
+   <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="images/html.png" alt="HTML">
+            <p>HTML</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/css-3.png" alt="CSS">
+            <p>CSS</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/java-script.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/java.png" alt="Java">
+            <p>Java</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/mysql.png" alt="mysql">
+            <p>mysql</p>
+        </div>
+        <div class="skill-card">
+            <img src="images/github-sign.png" alt="mysql">
+            <p>Git</p>
+        </div>
+    </div>
+</section>
+
+          
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2><br>
+        <div class="projects">
+                <div class="card" id="project1"
+                    onclick="window.open('https://github.com/KAP2228/portfolio', '_blank')"> <!--this is git hub link its not dipaly any link on the web page-->
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio built using HTML, CSS, JS.</p>
+            </div><br>
+
+                <div class="card" id="project2"
+                onclick="window.open('https://github.com/KAP2228/spotify-ui', '_blank')">
+                <h3>Spotify User Interface</h3>
+                <p>A responsive Spotify frontend UI clone created with HTML, CSS, and JavaScript.</p>
+            </div><br>
+
+                <div class="card" id="project3"
+                 onclick="window.open('https://github.com/KAP2228/rock-paper-scissors', '_blank')">
+            <h3>Rock Paper Scissors</h3>
+                <p>A fun and interactive Rock Paper Scissors frontend game created with HTML, CSS, and JavaScript.</p>
+            </div><br>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="name" placeholder="Krupa B" required>
+            <input type="email" placeholder="2001krupa@gmail.com" required>
+            <textarea placeholder=" your Message"></textarea>
+            <input type="location" placeholder="Bangalore, Karnataka" required>
+            <button type="submit">Send Message</button>
+        </form>
+
+</section>
+  
+
+    <footer>
+        <div class="footer-links">
+    <a href="https://www.linkedin.com/in/krupa-bidarolikar-2515b2227" target="_blank">
+    <img src="images/linkedin (1).png" alt="LinkedIn" width="px" height="20px"></a> |
+
+    <a href="https://github.com/KAP2228" target="_blank">
+     <img src="images/social.png" alt="GitHub" width="20px" height="20px" ></a>
+
+        </div>
+
+        <p>© 2025 Krupa B. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+body {
+    background: #111010;
+    color: #f1e9e9;
+    position: relative;
+    overflow-x: hidden;
+}
+
+section, nav, footer {
+    position: relative;
+    z-index: 2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111010;
+    color: #f1e9e9;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #f0eded;
+    color: #0c0c0c;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+/* CV Button - Hero Section */
+.cv-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cv-btn:hover {
+    background-color: #0056b3;
+}
+
+/* CV link in Navbar */
+.cv-link {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.cv-link:hover {
+    background-color: #0056b3;
+}
+
+/*social links*/
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25spx;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/*header about*/
+nav ul li a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+#about {
+    background: linear-gradient(135deg, #111, #1b1b1b);
+}
+
+
+.about-text {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #eaeaea;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlight keywords */
+.about-text span {
+    color: #ffdd57;
+    font-weight: bold;
+}
+
+/* Subtle hover effect (NO movement text) */
+.about-text:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+
+
+/* Hero */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color:rgb(246, 241, 241);
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #ffdd57;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* name*/
+.hero span {
+    color: #f26933;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #ffdd57;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Sections */
+section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.skills span {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+/* Skills Section with Images */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: white;
+    width: 120px;
+    height: 140px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.skill-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: #a0eddad1;
+}
+
+.skill-card:hover p {
+    color: white;
+}
+
+
+/* Projects */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgb(197, 125, 125);
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    color:rgb(244, 239, 239);
+}
+.card h3{
+    color:black;
+    font: bold;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+
+/* Contact */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px;
+    width: 100%;
+    background: #31cab3;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #f5f2f2;
+    color: rgb(20, 20, 20);
+    padding: 15px;
+    text-align: center;
+}
+canvas {
+    display: block;
+}
